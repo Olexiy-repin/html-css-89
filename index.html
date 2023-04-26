@@ -6,50 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">
-          <img src="./images/logo.svg" alt="логотип" width="68" height="56" />
+    <header class="page-header">
+      <nav class="page-navigation">
+        <a class="logo" href="./index.html">
+          <img class="logo-img" src="./images/logo.svg" alt="логотип" width="68" height="56" />
         </a>
-        <ul>
-          <li>
-            <a href="#about">Про нас</a>
+        <ul class="menu list">
+          <li class="menu-item">
+            <a class="menu-link link" href="#about">Про нас</a>
           </li>
-          <li>
-            <a href="#services">Послуги та ціни</a>
+          <li class="menu-item">
+            <a class="menu-link link" href="#services">Послуги та ціни</a>
           </li>
-          <li>
-            <a href="#our-team">Майстри</a>
+          <li class="menu-item">
+            <a class="menu-link link" href="#our-team">Майстри</a>
           </li>
-          <li>
-            <a href="#contacts">Контакти</a>
+          <li class="menu-item">
+            <a class="menu-link link" href="#contacts">Контакти</a>
           </li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">онлайн-запис</button>
+      <a class="contact-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+      <button class="modal-open-btn modal-open-btn-theme-dark" type="button">онлайн-запис</button>
     </header>
     <main>
-      <section>
+      <section class="hero">
         <div>
-          <ul>
+          <ul class="social-list">
             <li>
-              <a href="" lang="en">Instagram</a>
+              <a class="link" href="" lang="en">Instagram</a>
             </li>
             <li>
-              <a href="" lang="en">Youtube</a>
+              <a class="link" href="" lang="en">Youtube</a>
             </li>
           </ul>
         </div>
         <div>
           <p lang="en">A hair salon for men in Kyiv</p>
           <h1 lang="en">BarberShop</h1>
-          <p>Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.</p>
+          <p class="section-description">
+            Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.
+          </p>
         </div>
       </section>
-      <section id="about">
+      <section class="about" id="about">
         <div>
           <ul>
             <li>
@@ -73,14 +82,18 @@
         <div>
           <h2>ПРО НАС</h2>
           <h3>Найкращий Барбершоп твого міста</h3>
-          <p>Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до нас.</p>
+          <p class="section-description">
+            Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до нас.
+          </p>
           <p>
             Ми команда, яка ніколи не зупиняється на досягнутому і прагне змін. І коли ти потрапиш
             до рук нашого майстра, то вже ніколи не зможеш бути тим самим. Ми команда, яка завжди з
             клієнтами "на одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас
             приходить!
           </p>
-          <button type="button">онлайн-запис</button>
+          <button class="modal-open-btn modal-open-btn-theme-light" type="button">
+            онлайн-запис
+          </button>
         </div>
       </section>
       <section id="services">
