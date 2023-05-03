@@ -17,21 +17,58 @@
 }
 
 button {
-  font-family: inherit;
   cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 body {
   font-family: var(--main-font-family);
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 /* ================= COMPONENTS ================= */
 .modal-open-btn {
+  min-width: 160px;
+  padding: 12px 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 .modal-open-btn:hover,
@@ -40,7 +77,7 @@ body {
 }
 
 .modal-open-btn-theme-dark {
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .modal-open-btn-theme-light {
@@ -66,6 +103,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .suptitle-theme-dark {
@@ -108,14 +146,39 @@ body {
 
 .title-theme-dark {
   color: var(--primary-text-color-theme-dark);
+  margin-bottom: 44px;
 }
 
 .title-theme-light {
   color: var(--primary-text-color-theme-light);
+  margin-bottom: 20px;
 }
 /* ================= /COMPONENTS ================= */
 
 /* ================= HEADER ================= */
+.page-header {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+  column-gap: 70px;
+}
+
+.menu {
+  display: flex;
+  column-gap: 40px;
+}
+
 .menu-link {
   font-weight: 600;
   font-size: 12px;
@@ -135,6 +198,8 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
+  margin-left: auto;
+  margin-right: 40px;
 
   /* color: #ffffff; */
 }
@@ -189,6 +254,28 @@ body {
 /* ================= /ADVANTAGES ================= */
 
 /* ================= EMPLOYEES ================= */
+.employees {
+  background-color: #f7f7f7;
+}
+
+.employees-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.employees-list-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.employees-title {
+  color: var(--primary-text-color-theme-light);
+  margin-bottom: 44px;
+}
+
+.employees-list-text-content {
+  padding-top: 30px;
+}
+
 .employees-list-name {
   font-weight: 400;
   font-size: 18px;
@@ -196,6 +283,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-light);
+  margin-bottom: 8px;
 }
 
 .employees-list-position {
