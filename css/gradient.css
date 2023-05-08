@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  outline: 1px solid #000;
+}
+
+.linear-gradient-block,
+.radial-gradient-block {
+  height: 200px;
+}
+
+.linear-gradient-block {
+  background-image: linear-gradient(0deg, yellow 0% 50%, blue 50% 100%);
+  margin-bottom: 20px;
+}
+
+.radial-gradient-block {
+  background-image: radial-gradient(circle at center, blue 100px, yellow 50%, orange 100%);
+}
