@@ -49,7 +49,7 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <div class="hero-left-side">
             <ul class="media-list list">
               <li class="media-list-item">
@@ -63,15 +63,15 @@
           <div class="hero-right-side">
             <p class="suptitle suptitle-theme-dark" lang="en">A hair salon for men in Kyiv</p>
             <h1 class="main-title" lang="en">BarberShop</h1>
-            <p class="section-description section-description-theme-dark">
+            <p class="section-description section-description-theme-dark hero-section-description">
               Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.
             </p>
           </div>
         </div>
       </section>
       <!-- ABOUT -->
-      <section class="about" id="about">
-        <div class="container">
+      <section class="about section" id="about">
+        <div class="container about-container">
           <div class="about-left-side">
             <ul class="about-gallery list">
               <li class="about-gallery-item">
@@ -113,75 +113,89 @@
         </div>
       </section>
       <!-- SERVICES -->
-      <section class="services" id="services">
-        <p class="suptitle suptitle-theme-dark">Проведи час у компанії кращих майстрів</p>
-        <h2 class="title">Послуги та ціни</h2>
-        <table class="services-table list">
-          <tr class="services-table-row">
-            <td class="services-table-name">Чоловіча стрижка</td>
-            <td class="services-table-price">від 300 грн.</td>
-          </tr>
-          <tr class="services-table-row">
-            <td class="services-table-name">Стрижка бороди</td>
-            <td class="services-table-price">від 200 грн.</td>
-          </tr>
-          <tr class="services-table-row">
-            <td class="services-table-name">Стрижка вусів</td>
-            <td class="services-table-price">від 200 грн.</td>
-          </tr>
-          <tr class="services-table-row">
-            <td class="services-table-name">Гоління небезпечною бритвою</td>
-            <td class="services-table-price">від 200 грн.</td>
-          </tr>
-        </table>
-        <table class="services-table list">
-          <tr class="services-table-row">
-            <td class="services-table-name">Стрижка у стажера</td>
-            <td class="services-table-price">від 50 грн.</td>
-          </tr>
-          <tr class="services-table-row">
-            <td class="services-table-name">Стрижка під насадку</td>
-            <td class="services-table-price">від 200 грн.</td>
-          </tr>
-          <tr class="services-table-row">
-            <td class="services-table-name">Дитяча стрижка (до 12 років)</td>
-            <td class="services-table-price">від 300 грн.</td>
-          </tr>
-          <tr class="services-table-row">
-            <td class="services-table-name">Камуфлювання сивини</td>
-            <td class="services-table-price">від 200 грн.</td>
-          </tr>
-        </table>
-        <button class="modal-open-btn modal-open-btn-theme-dark" type="button">онлайн-запис</button>
+      <section class="services section" id="services">
+        <div class="container">
+          <p class="suptitle suptitle-theme-dark">Проведи час у компанії кращих майстрів</p>
+          <h2 class="title">Послуги та ціни</h2>
+          <div class="services-table-wrapper">
+            <table class="services-table list">
+              <tr class="services-table-row">
+                <td class="services-table-name">Чоловіча стрижка</td>
+                <td class="services-table-price">від 300 грн.</td>
+              </tr>
+              <tr class="services-table-row">
+                <td class="services-table-name">Стрижка бороди</td>
+                <td class="services-table-price">від 200 грн.</td>
+              </tr>
+              <tr class="services-table-row">
+                <td class="services-table-name">Стрижка вусів</td>
+                <td class="services-table-price">від 200 грн.</td>
+              </tr>
+              <tr class="services-table-row">
+                <td class="services-table-name">Гоління небезпечною бритвою</td>
+                <td class="services-table-price">від 200 грн.</td>
+              </tr>
+            </table>
+            <table class="services-table list">
+              <tr class="services-table-row">
+                <td class="services-table-name">Стрижка у стажера</td>
+                <td class="services-table-price">від 50 грн.</td>
+              </tr>
+              <tr class="services-table-row">
+                <td class="services-table-name">Стрижка під насадку</td>
+                <td class="services-table-price">від 200 грн.</td>
+              </tr>
+              <tr class="services-table-row">
+                <td class="services-table-name">Дитяча стрижка (до 12 років)</td>
+                <td class="services-table-price">від 300 грн.</td>
+              </tr>
+              <tr class="services-table-row">
+                <td class="services-table-name">Камуфлювання сивини</td>
+                <td class="services-table-price">від 200 грн.</td>
+              </tr>
+            </table>
+          </div>
+          <button
+            class="modal-open-btn modal-open-btn-theme-dark services-modal-open-btn"
+            type="button"
+          >
+            онлайн-запис
+          </button>
+        </div>
       </section>
       <!-- ADVANTAGES -->
-      <section class="advantages">
-        <div class="advantages-left-side">
-          <ul class="advantages-list list">
-            <li class="advantages-list-item">
-              <p class="advantages-list-quantity">600</p>
-              <p class="advantages-list-description">Задоволених клієнтів на день</p>
-            </li>
-            <li class="advantages-list-item">
-              <p class="advantages-list-quantity">50</p>
-              <p class="advantages-list-description">Нагород за відмінний сервіс</p>
-            </li>
-            <li class="advantages-list-item">
-              <p class="advantages-list-quantity">20</p>
-              <p class="advantages-list-description">Найкращих майстрів Києва</p>
-            </li>
-            <li class="advantages-list-item">
-              <p class="advantages-list-quantity">100</p>
-              <p class="advantages-list-description">Подарунків постійним клієнтам</p>
-            </li>
-          </ul>
-        </div>
-        <div class="advantages-right-side">
-          <p class="suptitle suptitle-theme-light">стара традиційна школа</p>
-          <h2 class="title title-theme-light">Чому приходять саме до нас?</h2>
-          <p class="section-description section-description-theme-light">
-            Про нас говорять лише добре. Але краще 1 раз побачити і відчути, ніж 10 разів прочитати.
-          </p>
+      <section class="advantages section">
+        <div class="container advantages-container">
+          <div class="advantages-left-side">
+            <ul class="advantages-list list">
+              <li class="advantages-list-item">
+                <p class="advantages-list-quantity">600</p>
+                <p class="advantages-list-description">Задоволених клієнтів на день</p>
+              </li>
+              <li class="advantages-list-item">
+                <p class="advantages-list-quantity">50</p>
+                <p class="advantages-list-description">Нагород за відмінний сервіс</p>
+              </li>
+              <li class="advantages-list-item">
+                <p class="advantages-list-quantity">20</p>
+                <p class="advantages-list-description">Найкращих майстрів Києва</p>
+              </li>
+              <li class="advantages-list-item">
+                <p class="advantages-list-quantity">100</p>
+                <p class="advantages-list-description">Подарунків постійним клієнтам</p>
+              </li>
+            </ul>
+          </div>
+          <div class="advantages-right-side">
+            <p class="suptitle suptitle-theme-light">стара традиційна школа</p>
+            <h2 class="title title-theme-light advantages-title">Чому приходять саме до нас?</h2>
+            <p
+              class="section-description section-description-theme-light advantages-section-description"
+            >
+              Про нас говорять лише добре. Але краще 1 раз побачити і відчути, ніж 10 разів
+              прочитати.
+            </p>
+          </div>
         </div>
       </section>
       <!-- EMPLOYEES -->
@@ -234,46 +248,50 @@
       </section>
       <!-- GALLERY -->
       <section class="gallery section">
-        <p class="suptitle suptitle-theme-light">Латинською мовою "барба" означає "борода"</p>
-        <h2 hidden>Галерея робіт</h2>
-        <ul class="gallery-list list">
-          <li class="gallery-list-item">
-            <img
-              class="gallery-list-img"
-              src="./images/gallery/gallery-img-1.jpg"
-              alt="майстер стриже клієнта"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li class="gallery-list-item">
-            <img
-              class="gallery-list-img"
-              src="./images/gallery/gallery-img-2.jpg"
-              alt="майстер голить бороду клієнту"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li class="gallery-list-item">
-            <img
-              class="gallery-list-img"
-              src="./images/gallery/gallery-img-3.jpg"
-              alt="майстер голить бороду клієнту"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li class="gallery-list-item">
-            <img
-              class="gallery-list-img"
-              src="./images/gallery/gallery-img-4.jpg"
-              alt="майстер стриже клієнта"
-              width="270"
-              height="360"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <p class="suptitle suptitle-theme-light gallery-suptitle">
+            Латинською мовою "барба" означає "борода"
+          </p>
+          <h2 hidden>Галерея робіт</h2>
+          <ul class="gallery-list list">
+            <li class="gallery-list-item">
+              <img
+                class="gallery-list-img"
+                src="./images/gallery/gallery-img-1.jpg"
+                alt="майстер стриже клієнта"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-list-item">
+              <img
+                class="gallery-list-img"
+                src="./images/gallery/gallery-img-2.jpg"
+                alt="майстер голить бороду клієнту"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-list-item">
+              <img
+                class="gallery-list-img"
+                src="./images/gallery/gallery-img-3.jpg"
+                alt="майстер голить бороду клієнту"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-list-item">
+              <img
+                class="gallery-list-img"
+                src="./images/gallery/gallery-img-4.jpg"
+                alt="майстер стриже клієнта"
+                width="270"
+                height="360"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <div id="contacts">
         <!-- CONTACT FORM -->
@@ -311,15 +329,17 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-      <p class="copyright">&#xa9; Copyright 2020</p>
-      <ul class="media-list list">
-        <li class="media-list-item">
-          <a class="media-list-link link" href="" lang="en">Instagram</a>
-        </li>
-        <li class="media-list-item">
-          <a class="media-list-link link" href="" lang="en">Youtube</a>
-        </li>
-      </ul>
+      <div class="container footer-container">
+        <p class="copyright">&#xa9; Copyright 2020</p>
+        <ul class="media-list list">
+          <li class="media-list-item">
+            <a class="media-list-link link" href="" lang="en">Instagram</a>
+          </li>
+          <li class="media-list-item">
+            <a class="media-list-link link" href="" lang="en">Youtube</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
