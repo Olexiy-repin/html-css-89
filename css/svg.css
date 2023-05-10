@@ -39,9 +39,37 @@ body {
 }
 
 .social-list-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #fff;
+
+  /* background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+/* .social-list-link-facebook {
+  background-image: url('../images/facebook.svg');
+}
+
+.social-list-link-twitter {
+  background-image: url('../images/twitter.svg');
+}
+
+.social-list-link-telegram {
+  background-image: url('../images/telegram.svg');
+} */
+
+.social-list-icon {
+  width: 32px;
+  height: 32px;
+  fill: tomato;
+}
+
+.social-list-link:hover .social-list-icon {
+  fill: teal;
 }
