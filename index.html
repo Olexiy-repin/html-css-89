@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -55,7 +59,7 @@
       <section class="hero">
         <div class="container hero-container">
           <div class="hero-left-side">
-            <ul class="media-list list">
+            <ul class="media-list hero-media-list list">
               <li class="media-list-item">
                 <a class="media-list-link link" href="" lang="en">Instagram</a>
               </li>
@@ -110,7 +114,7 @@
               з клієнтами "на одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас
               приходить!
             </p>
-            <button class="modal-open-btn modal-open-btn-theme-light" type="button">
+            <button class="modal-open-btn modal-open-btn-theme-light" type="button" data-modal-open>
               онлайн-запис
             </button>
           </div>
@@ -162,6 +166,7 @@
           <button
             class="modal-open-btn modal-open-btn-theme-dark services-modal-open-btn"
             type="button"
+            data-modal-open
           >
             онлайн-запис
           </button>
@@ -516,6 +521,54 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="contact-form">
+          <label class="contact-form-field-wrapper">
+            <span class="contact-form-field-desc">Імʼя*</span>
+            <span class="contact-form-input-wrapper">
+              <input
+                class="contact-form-input"
+                type="text"
+                name="user_first_name"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ]+"
+              />
+              <span class="contact-form-input-icon"></span>
+            </span>
+          </label>
+          <label class="contact-form-field-wrapper">
+            <span class="contact-form-field-desc">Телефон*</span>
+            <span class="contact-form-input-wrapper">
+              <input
+                class="contact-form-input"
+                type="tel"
+                name="user_tel"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <span class="contact-form-input-icon"></span>
+            </span>
+          </label>
+          <label class="contact-form-field-wrapper">
+            <span class="contact-form-field-desc">Повідомлення</span>
+            <textarea
+              class="contact-form-message"
+              name="user_message"
+              placeholder="Ваше повідомлення"
+            ></textarea>
+          </label>
+          <label class="contact-form-checkbox-wrapper">
+            <input class="contact-form-checkbox" type="checkbox" name="user_policy" required />
+            <svg class="contact-form-own-checkbox" width="20" height="20">
+              <use
+                class="contact-form-checkmark-icon"
+                href="./images/sprite.svg#icon-checkmark"
+              ></use>
+            </svg>
+            Погоджуюсь із політикою конфіденційності
+          </label>
+          <button type="submit" class="contact-form-submit">Надіслати</button>
+        </form>
       </div>
     </div>
 
