@@ -1,0 +1,129 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+/* ========== MIN-WIDTH MAX-WIDTH ========== */
+/* 400px + */
+/* @media (min-width: 400px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* 768px + */
+/* @media (min-width: 768px) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+/* 0px - 767px */
+/* @media (max-width: 767px) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+/* 0px - 400px */
+/* @media (max-width: 400px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* 500px */
+/* @media (width: 500px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* ========== AND ========== */
+/* 
+768px +
+0px - 1199px
+*/
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+/* ========== COMMA ========== */
+/* 
+0px - 767px
+1200px +
+*/
+/* @media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+/* ========== TYPES ========== */
+/* 
+  all
+  screen
+  print
+*/
+
+/* @media print {
+  body {
+    background-color: tomato;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .sec {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .sec-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+} */
+
+/* ========== ORIENTATION ========== */
+/* @media screen and (orientation: landscape) and (max-width: 767px) {
+  body {
+    background-color: tomato;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    background-color: teal;
+  }
+} */
