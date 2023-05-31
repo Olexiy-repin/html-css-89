@@ -47,10 +47,64 @@ body {
 }
 
 /* 
+0px - 767px
+2x
+*/
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .banner {
+    background-image: url('../images/car-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: url('../images/car-tablet.jpg');
+  }
+}
+
+/* 
+768px +
+2x
+*/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .banner {
+    background-image: url('../images/car-tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    background-image: url('../images/car-desktop.jpg');
+  }
+}
+
+/* 
+1200px +
+2x
+*/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .banner {
+    background-image: url('../images/car-desktop@2x.jpg');
+  }
+}
+
+/* 
 1x - 96dpi
 2x - 192dpi
 3x - 288dpi
 */
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: url('../images/car@2x.jpg');
+  }
+}
 
 .team-list {
   display: flex;
