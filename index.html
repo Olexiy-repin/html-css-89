@@ -47,16 +47,47 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open-btn js-open-menu" aria-expanded="false">
+          <svg class="mobule-menu-open-btn-icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu-open"></use>
+          </svg>
+        </button>
         <a class="contact-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="modal-open-btn modal-open-btn-theme-dark" type="button" data-modal-open>
+        <button
+          class="modal-open-btn modal-open-btn-theme-dark page-header-modal-open-btn"
+          type="button"
+        >
           онлайн-запис
         </button>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul>
+            <li>
+              <a href="">link-1</a>
+            </li>
+            <li>
+              <a href="">link-2</a>
+            </li>
+            <li>
+              <a href="">link-3</a>
+            </li>
+            <li>
+              <a href="">link-4</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container hero-container">
           <div class="hero-left-side">
             <ul class="media-list hero-media-list list">
@@ -76,9 +107,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- ABOUT -->
-      <section class="about section" id="about">
+      <!-- <section class="about section" id="about">
         <div class="container about-container">
           <div class="about-left-side">
             <ul class="about-gallery list">
@@ -119,9 +150,9 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- SERVICES -->
-      <section class="services section" id="services">
+      <!-- <section class="services section" id="services">
         <div class="container">
           <p class="suptitle suptitle-theme-dark">Проведи час у компанії кращих майстрів</p>
           <h2 class="title title-theme-dark">Послуги та ціни</h2>
@@ -171,9 +202,9 @@
             онлайн-запис
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- ADVANTAGES -->
-      <section class="advantages section">
+      <!-- <section class="advantages section">
         <div class="container advantages-container">
           <div class="advantages-left-side">
             <ul class="advantages-list list">
@@ -206,9 +237,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- EMPLOYEES -->
-      <section class="employees section" id="employees">
+      <!-- <section class="employees section" id="employees">
         <div class="container">
           <p class="suptitle suptitle-theme-light">для справжніх шанувальників атмосфери</p>
           <h2 class="title employees-title">Наші майстри</h2>
@@ -404,9 +435,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- GALLERY -->
-      <section class="gallery section">
+      <!-- <section class="gallery section">
         <div class="container">
           <p class="suptitle suptitle-theme-light gallery-suptitle">
             Латинською мовою "барба" означає "борода"
@@ -451,15 +482,15 @@
             </li>
           </ul>
         </div>
-      </section>
-      <div class="contact-sections-wrapper section" id="contacts">
-        <div class="container contact-sections-wrapper-container">
-          <!-- CONTACT FORM -->
-          <section class="contact-form-section">
+      </section> -->
+      <!-- <div class="contact-sections-wrapper section" id="contacts"> -->
+      <!-- <div class="container contact-sections-wrapper-container"> -->
+      <!-- CONTACT FORM -->
+      <!-- <section class="contact-form-section">
             <h2 class="title title-theme-dark">Онлайн-запис</h2>
-          </section>
-          <!-- CONTACT INFORMATION -->
-          <section class="contact-info-section">
+          </section> -->
+      <!-- CONTACT INFORMATION -->
+      <!-- <section class="contact-info-section">
             <h2 class="title title-theme-dark">Контакти</h2>
             <address class="contact-info-address">
               <ul class="contact-list list">
@@ -496,12 +527,12 @@
             </address>
             <h3 class="suptitle suptitle-theme-dark contact-info-suptitle">час роботи</h3>
             <p class="contact-info-date">Щоденно з 9:00 до 22:00</p>
-          </section>
-        </div>
-      </div>
+          </section> -->
+      <!-- </div> -->
+      <!-- </div> -->
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <p class="copyright">&#xa9; Copyright 2020</p>
         <ul class="media-list list">
@@ -513,8 +544,8 @@
           </li>
         </ul>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="24" height="24">
@@ -570,8 +601,15 @@
           <button type="submit" class="contact-form-submit">Надіслати</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
